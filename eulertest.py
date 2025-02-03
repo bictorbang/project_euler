@@ -17,7 +17,10 @@ def main() -> None:
 	numremain: int = len(ANSWERS)
 	
 	for (prob, expectans) in sorted(ANSWERS.items()):
-		module = importlib.import_module(f"p{prob:03}")
+		try: 
+			module = importlib.import_module(f"p{prob:03}")
+		except: 
+			return #f"Havent found file named p{prob:03}.py!"
 		starttime: float = time.time()
 		actualans: str = cast(Any, module).compute()  # Must return a string
 		elapsedtime: float = time.time() - starttime
