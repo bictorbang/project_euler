@@ -1,15 +1,5 @@
 #Even Fibonacci Numbers
 
-import functools
-
-@functools.lru_cache(maxsize=None) #128 by default
-def fib(num):
-    if num < 2:
-        return num
-    else:
-        return fib(num-1) + fib(num-2)
-
-@functools.lru_cache(maxsize=None) #128 by default
 def even_fibonacci_numbers(n = 4_000_000):
     res = 0 
     n_1 = 1
