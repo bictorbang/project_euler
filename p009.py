@@ -1,6 +1,5 @@
 # Special Pythagorean Triplet
 
-import time
 
 def special_pythagorean_triplet(n = 1_000):
     threshold = n // 3 - 1
@@ -9,13 +8,13 @@ def special_pythagorean_triplet(n = 1_000):
         c = n - a - b
         while c > b:
             if a*a + b*b == c*c:
-                return a*b*c, a, b, c
+                return a*b*c
             b += 1
             c -= 1
     return -1
 
+def compute():
+    return str(special_pythagorean_triplet())
 
-timer = time.time()
-res, a, b, c = special_pythagorean_triplet(5000)
-print(f"Result = {res}\nTime elapsed: {time.time() - timer:.6f}s")
-print(a, b, c)
+if __name__ == "__main__":
+    print(compute())

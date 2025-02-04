@@ -16,8 +16,5 @@ def largest_product_in_a_series(n = N, m = 13):
 def compute():
     return str(largest_product_in_a_series())
 
-import time 
 if __name__ == "__main__":
-    timer = time.time()
     print(compute())
-    print(time.time() - timer)
