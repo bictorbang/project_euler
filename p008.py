@@ -1,4 +1,4 @@
-# Larget Product in a Series
+# Largest Product in a Series
 
 import math
 

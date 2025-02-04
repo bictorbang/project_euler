@@ -1,3 +1,5 @@
+# Summation of primes
+
 from eulerlib import list_primes # , is_prime
 
 '''
@@ -16,7 +18,6 @@ def summation_of_primes(n = 2_000_000):
 
 def compute():
     return str(summation_of_primes())
-
 
 if __name__ == "__main__":
     print(compute())
