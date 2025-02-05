@@ -4,7 +4,7 @@ from itertools import count, takewhile
 from more_itertools import ilen
 from eulerlib import is_prime, list_primes
 
-# More efficient using range criterias and itertools.
+# More efficient using range criterias and itertools. (0.4s)
 def quadratic_primes(n = 1_000, m = 1_000):
     max_primes = 0
     product = 0
