@@ -4,7 +4,7 @@ from eulerlib import list_primes, is_prime
 from collections import deque
 
 def circular_primes(n = 1_000_000):
-    total = 0
+    total = 1
     for prime in list_primes(n):
         if set(str(prime)) & set("02468"): continue
         nums = (get_rotations(deque(str(prime))))                       
